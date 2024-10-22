@@ -28,6 +28,7 @@ function App() {
       body: id,
     });
     fetchData();
+    fetchData();
   }
 
   const listItems = item.map((item) => {
@@ -64,6 +65,7 @@ function App() {
       }),
     });
     fetchData();
+    fetchData();
     setName("");
     setEatable(false);
   };
@@ -76,6 +78,7 @@ function App() {
         "Content-Type": "application/json",
       },
     });
+    fetchData();
     fetchData();
   };
 
