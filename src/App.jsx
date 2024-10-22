@@ -15,21 +15,27 @@ function App() {
   }
 
   useEffect(() => {
-    //async function fetchData() {
-      //const result = await fetch("http://localhost:8080/list");
-      //const body = await result.json();
-      //setItem(body);
-      //console.log("test");
-    //}
     fetchData();
   }, []);
+
+  function handleRemove(id){
+    fetch('http://localhost:8080/list/delete', {
+      method: 'DELETE',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: id
+    })
+    fetchData()
+  }
 
   const listItems = item.map((item) => {
     return (
       <li key={item.id}>
         <span>{item.name}</span>
         <span>{item.eatable}</span>
-        <button>Remove</button>
+        <button type="button" onClick={() => handleRemove(item.id)}>Remove</button>
       </li>
     );
   });
