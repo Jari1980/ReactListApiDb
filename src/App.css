@@ -1,0 +1,82 @@
+#listDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(50deg, #1011103d, #100e1d 50%, #0b0e09);
+  position: static;
+  color: bisque;
+}
+
+#listUl {
+  list-style: none;
+  /*justify-content: center;
+align-items:center;
+flex-direction:row;*/
+}
+
+li {
+  box-sizing: border-box;
+}
+
+.column {
+  column-width: 200px;
+  display: inline-block;
+}
+#spanName {
+}
+#spanEatable {
+}
+#buttonRemove {
+  background-image: linear-gradient(3200deg, #cbcecb3d, #151416 50%, #629da1);
+  border-radius: 15px;
+  font-size: small;
+  color: bisque;
+  margin-bottom: 30px;
+  width: 90px;
+  height: 30px;
+}
+
+#formDiv {
+
+}
+
+#formInputDiv {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#ButtonAddDiv{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input{
+  text-align: center;
+  border:none;
+  border-radius: 5px;
+  background-color:beige;
+  outline: none;
+}
+
+#buttonAdd {
+  background-image: linear-gradient(3200deg, #cbcecb3d, #151416 50%, #629da1);
+  border-radius: 15px;
+  font-size: large;
+  color: bisque;
+  width: 125px;
+  height: 75px;
+}
+
+#buttonSeed{
+  align-items: center;
+background-image: linear-gradient(3200deg, #cbcecb3d, #151416 50%, #629da1);
+border-radius: 15px;
+font-size: large;
+color:bisque;
+margin-bottom: 30px;
+width: 250px;
+margin-bottom: 50px;
+}
